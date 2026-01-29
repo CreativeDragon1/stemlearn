@@ -1,0 +1,120 @@
+.assessment-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 1200px) {
+  .assessment-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .assessment-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
+.assessment-stats .stat-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.assessment-stats .stat-icon {
+  font-size: 2rem;
+}
+
+.assessment-stats .stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: block;
+}
+
+.assessment-stats .stat-label {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+.assessments-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 992px) {
+  .assessments-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.assessments-section {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  padding: 1.5rem;
+}
+
+.assessments-section h2 {
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+}
+
+.assessment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.assessment-item {
+  background: var(--background);
+  border-radius: var(--radius);
+  padding: 1rem;
+}
+
+.assessment-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.assessment-info h4 {
+  font-size: 0.9375rem;
+  margin-bottom: 0.125rem;
+}
+
+.assessment-info p {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+.pre-score {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem;
+  background: var(--warning-bg);
+  border-radius: var(--radius);
+  margin-bottom: 0.75rem;
+}
+
+.pre-score .label {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.pre-score .score {
+  font-weight: 600;
+  color: var(--warning);
+}
+
+.pending-badge {
+  text-align: center;
+  padding: 0.5rem;
+  background: var(--info-bg);
+  border-radius: var(--radius);
+  font-size: 0.8125rem;
+  color: var(--info);
+}

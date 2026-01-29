@@ -1,0 +1,151 @@
+.achievements-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .achievements-summary {
+    grid-template-columns: 1fr;
+  }
+}
+
+.summary-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+}
+
+.summary-icon {
+  font-size: 2.5rem;
+}
+
+.summary-value {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1;
+}
+
+.summary-label {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.achievements-section {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.achievements-section h2 {
+  margin-bottom: 1.5rem;
+}
+
+.badges-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.achievement-badge {
+  padding: 1.5rem;
+  background: var(--background);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  border: 2px solid transparent;
+  transition: all var(--transition);
+}
+
+.achievement-badge.earned {
+  border-color: var(--success);
+  background: linear-gradient(135deg, var(--success-bg), var(--surface));
+}
+
+.achievement-badge.locked {
+  opacity: 0.6;
+}
+
+.badge-icon-wrapper {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid;
+}
+
+.badge-icon-wrapper.locked {
+  background: var(--background);
+  border-color: var(--border);
+}
+
+.badge-icon {
+  font-size: 2.5rem;
+}
+
+.achievement-badge h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.achievement-badge p {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.earned-label {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: var(--success);
+  color: white;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.points-history {
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  padding: 1.5rem;
+}
+
+.points-history h2 {
+  margin-bottom: 1.5rem;
+}
+
+.points-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.points-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: var(--background);
+  border-radius: var(--radius);
+}
+
+.points-action {
+  color: var(--text-secondary);
+}
+
+.points-value {
+  font-weight: 600;
+  color: var(--success);
+}
